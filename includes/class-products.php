@@ -48,7 +48,7 @@ class Products
                 'id' => $product_id
             ]);
 
-            header('Location:/product_wishlist.php');
+            header('Location:/');
         exit;
 
         // Only change code above this line
