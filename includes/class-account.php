@@ -7,13 +7,13 @@ class Account {
 
     public function deposit($amount)
     {
-       return $this->balance += $amount;
+       $this->balance += $amount;
     }
 
     
     public function withdraw($amount)
     {
-       return $this->balance -= $amount;
+       $this->balance -= $amount;
     }
 
     
@@ -25,7 +25,7 @@ class Account {
     
     public function setBalance($balance)
     {
-       return $this->balance = $balance;
+       $this->balance = $balance;
     }
 
     
@@ -36,15 +36,15 @@ class Account {
     //create an object using the Account class: 
     $myAccount = new Account(); 
     // Set the initial balance to 100 
-    $balance = $myAccount->setBalance(100);
+    $myAccount->setBalance(100);
     
     // deposit 50 into your account:
-    $balance = $myAccount->deposit(50);
+    $myAccount->deposit(50);
     
     // withdraw 20 into your account 
-    $balance =$myAccount->withdraw(20);
+    $myAccount->withdraw(20);
     
     // echo the balance of your account 
-    echo $balance = $myAccount->getBalance();
+    echo $myAccount->getBalance();
     
     // Only change code above this line
